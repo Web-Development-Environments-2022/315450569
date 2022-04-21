@@ -6,12 +6,9 @@
 <script src="https://cdn.tiny.cloud/1/nufl5038mc638xkv5l2u3qcafowzlsekes4e1v6jpyv6timy/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
+  <div>
   <ul id="menu" class="topnav">
-    <lu style="float:left">Logo</lu>
-    <lu>
-      <a href="#about">About Me</a>      
-    </a>
-    </lu>
+    <lu><a href="#about">About Me</a></lu>
     <lu><a class="fa fa-picture-o" href="#photos">My Photos</a></lu>
     <lu><a href="#playlist">My Playlist</a></lu>
     <lu><a href="#like">Like</a></lu>
@@ -19,6 +16,7 @@
     <lu><a href="#spa">Q&A</a></lu>
     <lu><a href="#contact">Contact Me</a></lu>
   </ul>
+</div>
 <br/>
 <br/>
 <br/>
@@ -31,21 +29,29 @@
 <br/>
 <section id="about" class="section">
 <div>
-  <h2 >About Me</h2>
+  <h2>About Me</h2>
 </div>
 <br/>
 <br/>
 <br/>
 <br/>
-<p>
-  שמי אולגה לורט אמסלם, נולדתי במרוקו, בעיר מכנס בשנת 1942.
+<center>
+  <p>
+  וולטר ברוס ויליס נולד ב-19 במרץ 1955, שחקן, מפיק וזמר אמריקאי. ויליס נולד בבסיס צבאי באידאר-אוברשטיין שבגרמניה המערבית לאב אמריקאי ואם גרמנייה. בילדותו היה נער חברותי מאוד, אף על פי שבל מגמגום. בשנת 1987 ויליס היה נשוי לשחקנית דמי מור ולהם נולדו שלוש בנות. בשנת 2004 היה מאורס לדוגמנית ברוק ברנס אך הם לא התחתנו לבסוף, ומאז 2009 ויליס נשוי לדוגמנית הבריטית אמה המינג ולהם נולדו שתי בנות. 
+  ויליס התפרסם לראשונה בסדרת הטלוויזיה "בלשים בלילה" בסוף שנות ה-80, באותה תקופה גם הקליט ויליס אלבום פופ-בלוז בשם
   <br/>
-  עליתי לארץ מיד לאחר שהתחתנתי בשנת 1962, את חיי בניתי עם בעלי מימון, עליו השלום, באשדוד.
+   The Return of Bruno
   <br/>
-  נולדו לנו 6 ילדים. במהלך חיי עבדתי בכמה עבודות : ניהלתי בפעוטון פרטי, עבדתי כסייעת במחלקה לפיוטרפיה בבית אבות.
+   אשר כלל את הלהיט
   <br/>
-  מאז שפרשתי, אני אוהבת לעשות כושר, פילטיס ואימוני כושר קלים.
-</p>
+   Respect Yourself.
+   <br/>
+  הפריצה הגדולה של ויליס הייתה בסדרת סרטי הקולנוע "מת לחיות" שהפכה אותו לכוכב הוליוודי.
+  בהמשך הקריירה ויליס שיחק בהמון סרטים כגון : ספרות זולה, ארמגדון, החוש השישי ועוד.
+  לאחרונה, הודיעה משפחתו של ויליס כי הוא פורש ממשחק לאחר שאובחן כסובל מאפאזיה.
+  </p>
+</center>
+
 </section>
 <br/>
 <br/>
@@ -112,9 +118,11 @@ my photos
 <br/>
 <br/>
 <div >
-  <button class="likebutton" onclick="click_count()">like</button>
-  <div id="count_like" >0</div>
+  <button class="likebutton" onclick="click_count()">
+    <img src="images/תמונה2.png" width="100" height="100" >
+  </button>
 </div>
+<div id="count_like" >0</div>
 <br/>
 <br/>
 <br/>
@@ -133,10 +141,9 @@ my photos
 
 <section id="qrcoder" class="section">
 <div>
-  <h2>QR Code</Code></h2>
+  <h2>QR Code</h2>
 </div>
 <br/>
-<h3>Scan My QR Code</h3>
 <br/>
 <br/>
 <img src="images/qrcode_18012016_.png" width="200" height="200" >
