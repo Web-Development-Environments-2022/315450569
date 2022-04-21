@@ -37,7 +37,7 @@
 <br/>
 <center>
   <p>
-  וולטר ברוס ויליס נולד ב-19 במרץ 1955, שחקן, מפיק וזמר אמריקאי. ויליס נולד בבסיס צבאי באידאר-אוברשטיין שבגרמניה המערבית לאב אמריקאי ואם גרמנייה. בילדותו היה נער חברותי מאוד, אף על פי שבל מגמגום. בשנת 1987 ויליס היה נשוי לשחקנית דמי מור ולהם נולדו שלוש בנות. בשנת 2004 היה מאורס לדוגמנית ברוק ברנס אך הם לא התחתנו לבסוף, ומאז 2009 ויליס נשוי לדוגמנית הבריטית אמה המינג ולהם נולדו שתי בנות. 
+  וולטר ברוס ויליס נולד ב-19 במרץ 1955, שחקן, מפיק וזמר אמריקאי, זוכה פרס גלובוס הזהב ושני פרסי אמי. ויליס נולד בבסיס צבאי באידאר-אוברשטיין שבגרמניה המערבית לאב אמריקאי ואם גרמנייה. בילדותו היה נער חברותי מאוד, אף על פי שבל מגמגום. בשנת 1987 ויליס היה נשוי לשחקנית דמי מור ולהם נולדו שלוש בנות. בשנת 2004 היה מאורס לדוגמנית ברוק ברנס אך הם לא התחתנו לבסוף, ומאז 2009 ויליס נשוי לדוגמנית הבריטית אמה המינג ולהם נולדו שתי בנות. 
   ויליס התפרסם לראשונה בסדרת הטלוויזיה "בלשים בלילה" בסוף שנות ה-80, באותה תקופה גם הקליט ויליס אלבום פופ-בלוז בשם
   <br/>
    The Return of Bruno
@@ -60,24 +60,47 @@
 <section id="photos" class="section">
 <div>
   <h2>My Photos</h2>
+  <br/>
+<br/>
+<br/>
+</div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/bruce1.jpg" width="600" height="400">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/bruce2.jpg"width="600" height="400">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/brucefamily.jpg" width="600" height="400">
+  </div>
+<div class="mySlides fade">
+    <img src="images/brucemovie3.jpg" width="400" height="400">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/brucewin2.jpg" width="300" height="400">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/brucewingolden.jpg" width="300" height="400">
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
 </div>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
 <br/>
 <br/>
 <br/>
@@ -93,11 +116,9 @@ my photos
 <br/>
 <br/>
 <br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ujMxXOHJloI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 <br/>
-<div>
-<iframe width="700" height="415" src="https://www.youtube.com/embed/Z1ODZmoyNNc&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 <br/>
 <br/>
 <br/>
@@ -296,6 +317,22 @@ $(function(){
     menubar: false,
     height : "200",
   });
+</script>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 </script>
 </body>
 </html>
