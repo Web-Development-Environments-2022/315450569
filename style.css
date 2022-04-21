@@ -1,7 +1,110 @@
-#menu
-{
+body{
+	background-color: rgb(208, 208, 208);
+}
+
+.topnav {
+	text-align: center;
+	background-color: #e3dbc3;
+	/* background-color: rgb(255, 83, 83); */
+	overflow: hidden;
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 15px;
+	padding: 40px;
+	border-radius: 15px;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+	/* color: #f2f2f2; */
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+	background-color: rgb(41, 41, 41);
+	color: rgb(188, 188, 188);
+	border-radius: 75%;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+.section{
+	text-align: center;
+	overflow: hidden;
+}
+.section h2{
+	text-align: center;
+	background-color: #e3dbc3;
+	/* background-color: rgb(255, 83, 83); */
+	overflow: hidden;
+	font-family: "Times New Roman", Times, serif;
+	border-radius: 10px;
+}
+
+#contact input{
+	width: 20%;
+	height: 20px;
+	text-align: center;
+	border-width: 3px;
+	border-color: rgb(118, 118, 118);
+	background-color: rgb(255, 255, 255);
+	font-family: "Times New Roman", Times, serif;
+	border-radius: 10px;
+}
+#contact textarea{
+	text-align: right;
+	border-width: 3px;
+	border-color: rgb(118, 118, 118);
+	background-color: rgb(255, 255, 255);
+	font-family: "Times New Roman", Times, serif;
+	border-radius: 10px;
+}
+button {
+	width: 75px;
+	height: 50px;
+	font-size: large;
+	font-style: normal;
+	text-align: center;
+	border-width: 3px;
+	background-color: #e3dbc3;
+	font-family: "Times New Roman", Times, serif;
+	border-radius: 20px;
+}
+#email_button{
+	width: 150px;
+	height: 50px;
+	font-size: large;
+	font-style: normal;
+	text-align: center;
+	border-width: 3px;
+	background-color: #e3dbc3;
+	font-family: "Times New Roman", Times, serif;
+	border-radius: 20px;
+}
+#count_like{
+	background-color: #e3dbc3;
+  border: none;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  border-width: 3px;
+}
+table, th{
+	border: 4px solid #9f967d;
+}
+td{
+	border: 4px solid #9f967d;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://cdn.tiny.cloud/1/nufl5038mc638xkv5l2u3qcafowzlsekes4e1v6jpyv6timy/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
+  <ul id="menu" class="topnav">
+    <lu style="float:left">Logo</lu>
+    <lu>
+      <a href="#about">About Me</a>      
+    </a>
+    </lu>
+    <lu><a class="fa fa-picture-o" href="#photos">My Photos</a></lu>
+    <lu><a href="#playlist">My Playlist</a></lu>
+    <lu><a href="#like">Like</a></lu>
+    <lu><a href="#qrcoder">QR code</a></lu>
+    <lu><a href="#spa">Q&A</a></lu>
+    <lu><a href="#contact">Contact Me</a></lu>
+  </ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <section id="about" class="section">
+<div>
+  <h2 >About Me</h2>
+</div>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<p style="font-style:italic; font-size:larger; background-color: #e3dbc3; border-radius: 3000%; text-align: center;">
+  שמי אולגה לורט אמסלם, נולדתי במרוקו, בעיר מכנס בשנת 1942.
+  <br/>
+  עליתי לארץ מיד לאחר שהתחתנתי בשנת 1962, את חיי בניתי עם בעלי מימון, עליו השלום, באשדוד.
+  <br/>
+  נולדו לנו 6 ילדים. במהלך חיי עבדתי בכמה עבודות : ניהלתי בפעוטון פרטי, עבדתי כסייעת במחלקה לפיוטרפיה בבית אבות.
+  <br/>
+  מאז שפרשתי, אני אוהבת לעשות כושר, פילטיס ואימוני כושר קלים.
+</p>
 </section>
-
+<br/>
+<br/>
+<br/>
+<br/>
 <section id="photos" class="section">
+<div>
+  <h2>My Photos</h2>
+</div>
 <br/>
 <br/>
 <br/>
@@ -61,6 +78,9 @@ my photos
 </section>
 
 <section id="playlist" class="section">
+<div>
+  <h2>My PlayList</h2>
+</div>
 <br/>
 <br/>
 <br/>
@@ -69,21 +89,32 @@ my photos
 <br/>
 <br/>
 <br/>
+<div>
+<iframe width="700" height="415" src="https://www.youtube.com/embed/Z1ODZmoyNNc&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-my playlist
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="like" class="section">
+<div>
+  <h2>Like</h2>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div >
+  <button class="likebutton" onclick="click_count()">like</button>
+  <div id="count_like" >0</div>
+</div>
 <br/>
 <br/>
 <br/>
@@ -95,81 +126,114 @@ my playlist
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="qrcoder" class="section">
+<div>
+  <h2>QR Code</Code></h2>
+</div>
+<br/>
+<h3>Scan My QR Code</h3>
+<br/>
+<br/>
+<img src="images/qrcode_17732790_.png" width="200" height="200" >
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <div>
+    <h2>Q&A</h2>
+  </div>
+<h3>ההבדלים בין</h3>
+<h3>Web1.0 Web2.0 Web3.0</h3>
+<table style="width: 100%;">
+  <tr>
+    <th>WEB1.0</th>
+    <th>WEB2.0</th>
+    <th>WEB3.0</th>
+    <th>מאפיינים \ גרסא</th>
+  </tr>
+  <tr>
+     <td>קריאה בלבד</td> <!--web1.0 -->
+     <td>קריאה וכתיבה</td> <!--web2.0 -->
+     <td>קריאה, כתיבה ודינאמיות המאפשרת הפעלת פונקציות שונות</td> <!--web3.0 -->
+    <th>סוג הדף</th>
+  </tr>
+  <tr>
+    <td>תוכן סטטי שבעל האתר רוצה לחשוף בלי איזשהו אינטרקציה עם הקוראים</td> <!--web1.0 -->
+    <td>
+      <p>
+      תוכן דינאמי המאפשר אינטרקציה בין המשתמשים בדף, כגון רשת חברתית, בלוגים וכדומה</td> <!--web2.0 -->
+      </p>
+    <td>
+      <p>
+        האתר משתמש בלמידת מכונה, מה
+      <br/>
+        שמאפשר למידה של המשתמש והצגת תכנים המתאימים למשתמש באופן אישי
+      </p>
+      </td> <!--web3.0 -->
+   <th>תוכן הדף</th>
+ </tr>
+ <tr>
+  <td>מנועי החיפוש מחזירים תוכן מאקרו, החיפוש הינו מהיר מאוד אך פעמים 	רבות אינו מדויק</td> <!--web1.0 -->
+  <td>מנועי החיפוש מאחזרים תגיות עם תוכן מיקרו, כאשר תהליך התיוג מתבצע 	באופן ידני</td> <!--web2.0 -->
+  <td>מנועי החיפוש מאחזרים תגיות עם תוכן מיקרו, כאשר תהליך התיוג מתבצע באופן אוטומטי</td> <!--web3.0 -->
+ <th>מנועי החיפוש</th>
+</tr>
+</table>
+<div>
+<h3>נסביר את ההבדלים בטבלה באמצעות התרחיש שימוש הבא -חיפוש שאילתא "כמה עולה דירה בישראל?" במנועי החיפוש בגרסאות השונות </h3>
+<p style="font-size: large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">בגרסא הראשונית תוצאות החיפוש של השאילתא הנ"ל יהיו דפי אינטרנט סטטיים המתוייגים במילים שבשאילתא
+  <br/>
+  לדוגמא נקבל דפי אינטרנט על ישראל או על דירות באופן כללי, ואילו בגרסא השנייה יוחזרו אתרים העוסקים
+  <br/>
+  בשאילתא עצמה ואף נקבל אתרים העוסקים בדיון על מחיר הדירות בישראל כמו בלוגים או אתרי מכירה של דירות
+  <br/>
+  ובגרסא השלישית נקבל אתרים העונים על השאילתא, אתרים המותאמים אישית למשתמש, לדוגמא על בסיס מיקום המשתמש או חיפושים אחרונים שלו
+</p>
+</div>
+
 </section>
 
 <section id="contact" class="section">
+<div>
+  <h2>Contact Me</h2>
+</div>
+<br/>
+<br/>
+<div>
+  <input type="text" placeholder="Enter your first name" id="firstName" />
+  <br/>
+  <br/>
+  <input type="text" placeholder="Enter your last name" id="lastName" />
+  <br/>
+  <br/>
+  <input type="radio" style="width: 3%; " id="male" name="gender" value="male"> Male
+  <input type="radio" style="width: 3%; " id="female" name="gender" value="female"> Female
+  <br/>
+  <br/>
+  <input type="email" placeholder="Enter your email" id="email" />
+  <br/>
+  <br/>
+  <span>What is your question?</span>
+  <br/>
+    <textarea id="mytextarea" rows="5" ></textarea>
+  <br/>
+  <br/>
+  <button id="email_button" onclick="sendContact();">Send contact</button>
+</div>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
 <br/>
 <br/>
 <br/>
@@ -187,7 +251,40 @@ $(function(){
 <script type="text/javascript">
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
- });​
+ });
  </script>
+ <script type="text/javascript">
+   function sendContact(){
+    var contact_name = firstName.value +" "+ lastName.value
+    // console.log(contact_name)
+    var genderValue = male.checked ? "male" : "female"
+    // console.log("gender = " + genderValue)
+    var contact_email = email.value
+    // console.log(contact_email)
+    var contact_content = tinymce.get("mytextarea").getContent();
+    // console.log(contact_content.slice(3, -4))
+    window.open("mailto:tal.ben.hamou@gmail.com?subject=Contacting With TBH&body=" +contact_content.slice(3, -4))
+   }
+
+ </script>
+ <script type="text/javascript">
+  var count = 0;
+  function click_count(){
+    ++count;
+    document.getElementById("count_like").innerHTML = count;
+    
+  }
+  document.write(count);
+</script>
+<script type="text/javascript">
+  tinymce.init({
+    selector: "#mytextarea",
+    plugins: "emoticons",
+    toolbar: "emoticons",
+    toolbar_location: "bottom",
+    menubar: false,
+    height : "200",
+  });
+</script>
 </body>
 </html>
