@@ -37,7 +37,7 @@
 <br/>
 <br/>
 <br/>
-<p style="font-style:italic; font-size:larger; background-color: #e3dbc3; border-radius: 3000%; text-align: center;">
+<p>
   שמי אולגה לורט אמסלם, נולדתי במרוקו, בעיר מכנס בשנת 1942.
   <br/>
   עליתי לארץ מיד לאחר שהתחתנתי בשנת 1962, את חיי בניתי עם בעלי מימון, עליו השלום, באשדוד.
@@ -139,7 +139,7 @@ my photos
 <h3>Scan My QR Code</h3>
 <br/>
 <br/>
-<img src="images/qrcode_17732790_.png" width="200" height="200" >
+<img src="images/qrcode_18012016_.png" width="200" height="200" >
 <br/>
 <br/>
 <br/>
@@ -270,9 +270,13 @@ $(function(){
  <script type="text/javascript">
   var count = 0;
   function click_count(){
-    ++count;
+    if (count == 0){
+      ++count;
+    }
+    else{
+      count = 0;
+    }
     document.getElementById("count_like").innerHTML = count;
-    
   }
   document.write(count);
 </script>
