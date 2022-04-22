@@ -27,20 +27,22 @@
 </div>
 <br/>
 <center>
-  <p>
-  וולטר ברוס ויליס נולד ב-19 במרץ 1955, שחקן, מפיק וזמר אמריקאי, זוכה פרס גלובוס הזהב ושני פרסי אמי. ויליס נולד בבסיס צבאי באידאר-אוברשטיין שבגרמניה המערבית לאב אמריקאי ואם גרמנייה. בילדותו היה נער חברותי מאוד, אף על פי שבל מגמגום. בשנת 1987 ויליס היה נשוי לשחקנית דמי מור ולהם נולדו שלוש בנות. בשנת 2004 היה מאורס לדוגמנית ברוק ברנס אך הם לא התחתנו לבסוף, ומאז 2009 ויליס נשוי לדוגמנית הבריטית אמה המינג ולהם נולדו שתי בנות. 
-  ויליס התפרסם לראשונה בסדרת הטלוויזיה "בלשים בלילה" בסוף שנות ה-80, באותה תקופה גם הקליט ויליס אלבום פופ-בלוז בשם
+  <b id="para_about">
+    <br/>.וולטר ברוס ויליס נולד ב-19 במרץ 1955, שחקן, מפיק וזמר אמריקאי, זוכה פרס גלובוס הזהב ושני פרסי אמי 
+    <br/>.ויליס נולד בבסיס צבאי באידאר-אוברשטיין שבגרמניה המערבית לאב אמריקאי ואם גרמנייה
+    <br/>.בילדותו היה נער חברותי מאוד, אף על פי שסבל מגמגום
+    <br/>,בשנת 1987 ויליס היה נשוי לשחקנית דמי מור ולהם נולדו שלוש בנות
+    <br/>,בשנת 2004 היה מאורס לדוגמנית ברוק ברנס אך הם לא התחתנו לבסוף
+    <br/>.ומאז 2009 ויליס נשוי לדוגמנית הבריטית אמה המינג ולהם נולדו שתי בנות<br/>
+  ויליס התפרסם לראשונה בסדרת הטלוויזיה "בלשים בלילה" בסוף שנות ה-80
+  <br/>,"The Return of Bruno" באותה תקופה גם הקליט ויליס אלבום פופ-בלוז בשם
   <br/>
-   The Return of Bruno
+  ."Respect Yourself" אשר כלל את הלהיט
   <br/>
-   אשר כלל את הלהיט
-  <br/>
-   Respect Yourself.
-   <br/>
-  הפריצה הגדולה של ויליס הייתה בסדרת סרטי הקולנוע "מת לחיות" שהפכה אותו לכוכב הוליוודי.
-  בהמשך הקריירה ויליס שיחק בהמון סרטים כגון : ספרות זולה, ארמגדון, החוש השישי ועוד.
-  לאחרונה, הודיעה משפחתו של ויליס כי הוא פורש ממשחק לאחר שאובחן כסובל מאפאזיה.
-  </p>
+  .הפריצה הגדולה של ויליס הייתה בסדרת סרטי הקולנוע "מת לחיות" שהפכה אותו לכוכב הוליוודי<br/>
+  .בהמשך הקריירה ויליס שיחק בהמון סרטים כגון : ספרות זולה, ארמגדון, החוש השישי ועוד<br/>
+  .לאחרונה, הודיעה משפחתו של ויליס כי הוא פורש ממשחק לאחר שאובחן כסובל מאפאזיה<br/>
+  </b>
 </center>
 </section>
 <br/>
@@ -117,12 +119,10 @@
 <br/>
 <br/>
 <br/>
-<br/>
-  <button class="likebutton" onclick="click_count()" style="display: inline-block;">
-    <img src="images/תמונה2.png" width="120" height="115"/>
-    <div id="count_like" >0</div>
+    <img id="like_img" src="images/like.png" width="90" height="90" onclick="click_count()" style="margin: 10px;padding: 10px;display: inline-block;"/>
+    <div id="count_like" style="display:inline;">0</div>
   </button>
-<a href="https://www.instagram.com/dobledebruce/" style="display: inline-block;">
+<a id="insta_img" href="https://www.instagram.com/dobledebruce/" style="margin: 10px;padding: 0px; display: inline-block;">
   <img src="images/instalogoreal.png" width="100" height="100"/>
 </a>
 <br/>
@@ -205,7 +205,6 @@
   <h2>Contact Me</h2>
 </div>
 <br/>
-<br/>
 <div>
   <input type="text" placeholder="Enter your first name" id="firstName" />
   <br/>
@@ -213,14 +212,16 @@
   <input type="text" placeholder="Enter your last name" id="lastName" />
   <br/>
   <br/>
-  <input type="radio" style="width: 3%; " id="male" name="gender" value="male"> Male
-  <input type="radio" style="width: 3%; " id="female" name="gender" value="female"> Female
-  <br/>
+  <input type="radio" style="width: 1%; " id="male" name="gender" value="male"/>
+  <b style="display: inline-block; font-family: Arial, Helvetica, sans-serif; padding: 1%; margin: 0%;">Male</b>
+  <input type="radio" style="width: 1%; font-family: Arial, Helvetica, sans-serif;" id="female" name="gender" value="female"/> 
+  <b style="display: inline-block; font-family: Arial, Helvetica, sans-serif; padding: 1%; margin: 0%;">Female</b>
   <br/>
   <input type="email" placeholder="Enter your email" id="email" />
   <br/>
   <br/>
-  <span>What is your question?</span>
+  <span style="font-family: Arial, Helvetica, sans-serif;">What is your question?</span>
+  <br/>
   <br/>
     <textarea id="mytextarea" rows="5" ></textarea>
   <br/>

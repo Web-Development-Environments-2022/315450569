@@ -11,7 +11,7 @@ body{
 	overflow: hidden;
 	position: fixed;
 	width: 100%;
-	height: 15px;
+	height: 20px;
 	padding: 40px;
 	margin: 0%;
 }
@@ -44,7 +44,7 @@ body{
 }
 .section{
 	text-align: center;
-	overflow: hidden;
+	overflow:hidden;
 }
 .section h2,h1{
 	text-align: center;
@@ -60,13 +60,13 @@ body{
 }
 
 #contact input{
-	width: 20%;
-	height: 20px;
+	width: 25%;
+	height: 30px;
 	text-align: center;
 	border-width: 3px;
 	border-color: rgb(118, 118, 118);
 	background-color: rgb(255, 255, 255);
-	font-family: "Times New Roman", Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 	border-radius: 10px;
 }
 #contact textarea{
@@ -74,7 +74,7 @@ body{
 	border-width: 3px;
 	border-color: rgb(118, 118, 118);
 	background-color: rgb(255, 255, 255);
-	font-family: "Times New Roman", Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 	border-radius: 10px;
 }
 .likebutton {
@@ -89,6 +89,11 @@ body{
 	/* border-radius: 20px;  */
 	border: none;
 } 
+#like_img:hover{
+	opacity:2;
+	width: 120px;
+	height: 120px;
+}
 #email_button{
 	width: 150px;
 	height: 50px;
@@ -97,15 +102,18 @@ body{
 	text-align: center;
 	border-width: 3px;
 	background-color: #a2e5f5;
-	font-family: "Times New Roman", Times, serif;
+	font-family:Arial, Helvetica, sans-serif;
 	border-radius: 20px;
 }
 #count_like{
   color: rgb(0, 0, 0);
   padding: 15px 20px;
-  font-size: x-large;
+  font-size: large;
   font-family: Arial, Helvetica, sans-serif;
   font: bolder;
+  border-width: 10px;
+  background-color: #a2e5f5;
+  border-radius: 20px;
 }
 table, th{
 	border: 4px solid #a2e5f5;
@@ -206,14 +214,24 @@ td{
   
   /* Add a hover effect if you want */
   .fa:hover {
-	opacity: 0.7;
+	opacity: 1;
+	width: 120px;
   }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
+
   .fa-instagram {
 	background: #3B5998;
 	color: white;
   }
-  
+#para_about{
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font: bold;
+	text-align:center;
+	text-transform:capitalize;
+}
+#insta_img :hover{
+	opacity:1;
+	width: 120px;
+	height: 120px;
+
+}
